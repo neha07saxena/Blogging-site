@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+   <h1 align="center">Hello {{ email }}!</h1>  <!--Email is from render_template -->
+   <hr><br>
+   <a href="/blogs"><h2 align="center">View My Blogs</h2></a>
+   <br>
+   <a href="/logout"><h2 align="center">Log Out</h2></a>
+<br>
+<div class="form-page" align="center">
+  <form id="view-all-blogs" action="/view_blogs">
+      <button type="submit" class="btn btn-success">View Recent Blogs</button>
+  </form>
+</div>
+{% endblock %}

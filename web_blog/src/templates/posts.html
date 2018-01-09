@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <a href="/blogs"><button class="btn btn-default"><-Back to My Blogs</button></a>
+    <h2 align="center"><b>{{ blog_title }}</b></h2>
+    {% if posts|length > 0 %}
+    {% for post in posts %}
+    <h3>{{ post.title }}</a></h3>
+    <p>{{ post.content }}</p>
+    <p>By: <u>{{ post.author }}</u> <br> Date: {{ post.created_date }}</p>
+
+    <hr>
+    {% endfor %}
+    {% else %}
+     <h4>There are no posts yet!</h4>
+    <hr>
+    {% endif %}
+    <a href="/posts/new/{{ blog_id }}"><button class="btn btn-success">Add New Post</button></a>
+</div>
+{% endblock %}

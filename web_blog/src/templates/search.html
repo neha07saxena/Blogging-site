@@ -1,0 +1,20 @@
+<!--{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <h2 align="center">Resulting Blogs</h2>
+    <hr>
+    {% if results|length > 0 %}
+    {% for result in results %}
+        <h3><a href="/posts/{{ result._id }}">{{ result.title }}</a></h3>
+        <p>{{ result.description }}</p>
+        <hr>
+    <h3>abcd</h3>
+    {% endfor %}
+    {% else %}
+        <h3>There are no blogs!</h3>
+        <hr>
+    {% endif %}
+
+    <a href="/"><button class="btn btn-success">Back to Home</button></a>
+</div>
+{% endblock %}-->

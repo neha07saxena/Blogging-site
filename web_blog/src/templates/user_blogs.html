@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <a href="/profile"><button class="btn btn-default"><- Back to Profile</button></a>
+    <h2 align="center"><b>{{ email }}'s</b> Blogs!</h2>
+    <hr>
+    {% if blogs|length > 0 %}
+    {% for blog in blogs %}
+        <h3><a href="/posts/{{ blog._id }}">{{ blog.title }}</a></h3>
+        <p>{{ blog.description }}</p>
+        <hr>
+    {% endfor %}
+    {% else %}
+        <h3>There are no blogs yet!</h3>
+        <hr>
+    {% endif %}
+
+    <a href="/blogs/new"><button class="btn btn-success">Add New Blog</button></a>
+</div>
+{% endblock %}

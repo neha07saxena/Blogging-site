@@ -1,0 +1,65 @@
+<!--form {
+ margin-top: 25px;
+}
+<!-- We are setting styles for a particular form, for setting this to all, replace #login-form by form-->
+
+.form-page {
+ max-width: 200px;
+}-->
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+ body {
+        background-color: #444;
+        background: url(http://s18.postimg.org/l7yq0ir3t/pick8_1.jpg);
+     }
+
+
+/*Resize the wrap to see the search bar change!*/
+    .wrap{
+        width: 30%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .form-page input[type="text"] {
+        margin-bottom: 10px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .form-page input[type="password"] {
+        margin-bottom: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .form-page .form-control {
+        position: relative;
+         max-width: 200px;
+        font-size: 16px;
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+        height: auto;
+        padding: 10px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .vertical-offset-100 {
+        padding-top: 100px;
+    }
+
+   .img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    }
+
+    .panel {
+    margin-bottom: 80px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    }
